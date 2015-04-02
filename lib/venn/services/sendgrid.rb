@@ -10,6 +10,18 @@ module Venn
         end
       end
 
+      def send(from, to, subject, message)
+        mail = SendGrid::Mail.new do |m|
+          m.to = to
+          m.from = from
+          m.subject = subject
+          m.html = message
+        end
+        @client.send mail
+
+        @name
+      end
+
     end
   end
 end
