@@ -1,9 +1,9 @@
 module Venn
   class EmailClient
 
-    def initialize(opts)
+    def initialize(api_key)
       @services = {}
-      @venn_client = API.new opts[:api_key]
+      @venn_client = Venn::Services::Api.new :api_key => api_key
       @keys = @venn_client.get_keys
       configure_services @keys
     end

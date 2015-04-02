@@ -4,13 +4,13 @@ module Venn
 
       def initialize(keys)
         @name = 'mandrill'
-        @client = ::Mandrill::API.new keys.api_key
+        @client = ::Mandrill::API.new keys[:api_key]
       end
 
       def send(from, to, subject, message)
         message = {
           'subject' => subject,
-          'to': [{ 'email' => to}],
+          'to' => [{ 'email' => to}],
           'from_email' => from,
           'html' => message
         }

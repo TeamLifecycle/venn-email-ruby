@@ -5,13 +5,13 @@ module Venn
       def initialize(keys)
         @name = 'sendgrid'
         @client = ::SendGrid::Client.new do |c|
-          c.api_user = keys.api_user
-          c.api_key = keys.api_key
+          c.api_user = keys[:api_user]
+          c.api_key = keys[:api_key]
         end
       end
 
       def send(from, to, subject, message)
-        mail = SendGrid::Mail.new do |m|
+        mail = ::SendGrid::Mail.new do |m|
           m.to = to
           m.from = from
           m.subject = subject
