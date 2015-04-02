@@ -22,6 +22,9 @@ Gem::Specification.new do |spec|
     spec.metadata['allowed_push_host'] = ""
   end
 
+  spec.add_dependency 'mandrill-api'
+  spec.add_dependency 'sendgrid-ruby'
+
   spec.add_development_dependency "bundler", "~> 1.8"
   spec.add_development_dependency "rake", "~> 10.0"
 end
