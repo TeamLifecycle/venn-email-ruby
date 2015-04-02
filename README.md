@@ -18,7 +18,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To use, simply create an instace of the email client and then send an email!
+
+```ruby
+client = Venn::EmailClient.new 'YOUR_VENN_API_KEY'
+client.send 'from_email', 'to_email', 'subject_line', 'message_body'
+```
 
 ## Development
 
