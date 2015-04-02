@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Alex Sears"]
   spec.email         = ["alexwsears@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Venn Email Redundancy Package}
+  spec.description   = spec.summary
+  spec.homepage      = "https://github.com/VennHQ/venn-email-ruby"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
+    spec.metadata['allowed_push_host'] = ""
   end
 
   spec.add_development_dependency "bundler", "~> 1.8"
