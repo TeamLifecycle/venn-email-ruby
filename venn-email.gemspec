@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'venn/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "venn-email-ruby"
+  spec.name          = "venn-email"
   spec.version       = Venn::VERSION
   spec.authors       = ["Alex Sears"]
   spec.email         = ["alexwsears@gmail.com"]
