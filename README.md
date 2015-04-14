@@ -5,7 +5,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'venn-email-ruby'
+gem 'venn-email'
 ```
 
 And then execute:
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install venn-email-ruby
+    $ gem install venn-email
 
 ## Usage
 
