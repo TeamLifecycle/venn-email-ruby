@@ -5,7 +5,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'venn-email-ruby'
+gem 'venn-email'
 ```
 
 And then execute:
@@ -14,13 +14,15 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install venn-email-ruby
+    $ gem install venn-email
 
 ## Usage
 
 To use, simply create an instace of the email client and then send an email!
 
 ```ruby
+require 'venn-email'
+
 client = Venn::EmailClient.new 'YOUR_VENN_API_KEY'
 client.send 'from_email', 'to_email', 'subject_line', 'message_body'
 ```
